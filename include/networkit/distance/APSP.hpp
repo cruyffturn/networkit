@@ -56,7 +56,7 @@ class APSP : public Algorithm {
      * connected.
      *
      */
-    edgeweight getDistance(node u, node v) const {
+    std::vector<std::vector<edgeweight>> getDistance(node u, node v) const {
         assureFinished();
         return distances[u];
     }
