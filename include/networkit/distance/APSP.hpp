@@ -58,7 +58,7 @@ class APSP : public Algorithm {
      */
     edgeweight getDistance(node u, node v) const {
         assureFinished();
-        return distances[u][v];
+        return distances[u];
     }
 
     /**
